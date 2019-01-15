@@ -36,7 +36,7 @@ bidmc_drg_2019$`Median Charge` <- as.numeric(gsub(",","",bidmc_drg_2019$`Median 
 bumc_drg_2019 <- read.csv("./data/BUMC DRG-Dec2018.csv")
 
 # Change the column names
-colnames(bumc_drg_2019[1]) <- "DRG"
+colnames(bumc_drg_2019)[1] <- "DRG"
 colnames(bumc_drg_2019)[2] <- "Description"
 colnames(bumc_drg_2019)[3] <- "Median Charge"
 
